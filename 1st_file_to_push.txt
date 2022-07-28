@@ -1,1 +1,5 @@
 Hello, world!
+
+This is my first homework on Git matter.
+
+The quick brown fox jumps over the lazy dog.
