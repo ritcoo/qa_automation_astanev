@@ -8,7 +8,8 @@ public class Lecture12Homework {
 
     @Test
     public void Test1() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "D:/QA_Automation/MyExercises/FirstProjectWithJUnitAndSelenium/src/main/resources/Drivers/chromedriver.exe");
+        String projectPath = System.getProperty("user.dir");
+        System.setProperty("webdriver.chrome.driver", projectPath + "/src/main/resources/Drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("https://www.google.com/");
