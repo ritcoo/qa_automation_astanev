@@ -1,5 +1,5 @@
-import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -34,7 +34,7 @@ public class Lecture14Homework {
         String expected = "todo completed";
         WebElement completed = driver.findElement(By.xpath("//ul[@class='todo-list']/li"));
         String actual = completed.getAttribute("class");
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
         Thread.sleep(3000);
     }
 
